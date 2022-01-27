@@ -15,42 +15,41 @@ const currentyear = 2022;
 document.querySelector('#year').innerHTML=currentyear;
 
 // Step 5: declare and instantiate a variable to hold the name of your picture
-const myImage = 'images/coco.jpeg'
+const myImage = 'images/coco.jpeg';
 
 // Step 6: copy your image into the "images" folder
 
 // Step 7: place the value of the picture variable into the HTML file (hint: document.querySelector().setAttribute())
-document.querySelector('#mainImage').src='images/coco.jpeg'
+document.querySelector('#mainImage').src='images/coco.jpeg';
 
 
 
 /* ARRAYS */
 
 // Step 1: declare and instantiate an array variable to hold your favorite foods
-
-
+const favoriteFoods = ['pizza','meat','icecream','mantecol','choripan','milanesa'];
 // Step 2: place the values of the favorite foods variable into the HTML file
-
+document.querySelector('#food').innerHTML=favoriteFoods;
 
 // Step 3: declare and instantiate a variable to hold another favorite food
-
+let food1='chicken';
 
 // Step 4: add the variable holding another favorite food to the favorite food array
-
+favoriteFoods.push(food1);
 
 // Step 5: repeat Step 2
-
+document.querySelector('#food').innerHTML=favoriteFoods;
 
 // Step 6: remove the first element in the favorite foods array
-
+favoriteFoods.shift();
 
 // Step 7: repeat Step 2
-
+document.querySelector('#food').innerHTML=favoriteFoods;
 
 // Step 8: remove the last element in the favorite foods array
-
+favoriteFoods.pop();
 
 // Step 7: repeat Step 2
-
+document.querySelector('#food').innerHTML=favoriteFoods;
 
 
