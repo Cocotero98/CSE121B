@@ -15,12 +15,12 @@ const currentyear = 2022;
 document.querySelector('#year').innerHTML=currentyear;
 
 // Step 5: declare and instantiate a variable to hold the name of your picture
-const myimg = "me"
+const myImage = ('images/coco.jpeg')
 
 // Step 6: copy your image into the "images" folder
 
 // Step 7: place the value of the picture variable into the HTML file (hint: document.querySelector().setAttribute())
-document.querySelector('img').setAttribute(src='images/coco.jpeg')
+document.querySelector('#mainImage').setAttribute(src=myImage)
 
 
 
