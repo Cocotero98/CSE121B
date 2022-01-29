@@ -11,8 +11,8 @@ function add(number1,number2){
 
 // Step 3: Step 3: Using function declaration, define another function named addNumbers that gets the values of two HTML form controls with IDs of addend1 and addend2. Pass them to the add function
 function addNumbers(){
-    let number1=document.querySelector("#addend1").value;
-    let number2=document.querySelector("#addend2").value;
+    let number1=parseInt(document.querySelector("#addend1").value);
+    let number2=parseInt(document.querySelector("#addend2").value);
     let result=add(number1,number2);
     document.getElementById("sum").value=result;
 }
@@ -25,8 +25,8 @@ function subtract(number1,number2){
     return number1-number2;
 }
 function subtractNumbers(){
-    let firstnumber=document.querySelector("#minuend").value;
-    let secondnumber=document.querySelector("#subtrahend").value;
+    let firstnumber=parseInt(document.querySelector("#minuend").value);
+    let secondnumber=parseInt(document.querySelector("#subtrahend").value);
     let final=subtract(firstnumber,secondnumber);
     document.getElementById("difference").value=final;
 }
