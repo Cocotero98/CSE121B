@@ -9,7 +9,10 @@ const me={
     favoriteFoods: ['pizza','milanesa','asado'],
     hobbbies:['work out','play the guitar','study'],
     placesLived:[
-        {places=[{place:'Pergamino'},{length:'23'}]}
+        {
+            place:'Pergamino',
+            length:'23 years'
+        }
     ],
 
 }
@@ -53,8 +56,14 @@ document.querySelector('#hobbies').innerHTML=newHobbies.join()
 // Step 8: For each object in the <em>placesLived</em> property:
 // - Create an HTML <dt> element and put its place property in the <dt> element
 // - Create an HTML <dd> element and put its length property in the <dd> element
-const places= me.placesLived.forEach(place=>{return `<dt>${place}</dt>`})
-const length= me.placesLived.forEach(length=>{return `<dd>${length}</dd>`})
-// Step 9: Append the HTML <dt> and <dd> elements created above to the HTML <dl> element with an ID of places-lived
-document.querySelector('#places-lived').appendChild= places
-document.querySelector('#places-lived').appendChild=length
+me.placesLived.forEach((placeLived) => {
+    let placesLivedPlace = document.createElement('dt');
+    placesLivedPlace.textContent = placeLived.place;
+    
+    let placesLivedLength = document.createElement('dd');
+    placesLivedLength.textContent = placeLived.length;
+    
+    // Step 9: Append the HTML <dt> and <dd> elements created above to the HTML <dl> element with an ID of places-lived
+    document.querySelector('#places-lived').appendChild(placesLivedPlace);
+    document.querySelector('#places-lived').appendChild(placesLivedLength);
+})
