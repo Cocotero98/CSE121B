@@ -5,7 +5,7 @@
 // Step 1: Declare a new variable to hold information about yourself
 const me={
     name: 'Agustin',
-    photo: 'C:/Users/Eagler/Desktop/CocoBYUPathway/CSE121B/images/coco.jepg',
+    photo: '../images/coco.jpeg',
     favoriteFoods: ['pizza','milanesa','asado'],
     hobbbies:['work out','play the guitar','study'],
     placesLived:[

@@ -1,4 +1,7 @@
 /* HTML Selectors */
+img{
+    width:50%;
+}
 body {
     font-family: 'Kalam', cursive;
 }
