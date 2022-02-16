@@ -1,0 +1,10 @@
+Un registrador de ejercicios, comidas, tiempo de estudio, tiempo de sueno
+
+
+boton para seleccionar uno de los de arriba y anadir informacion con la fecha
+
+boton para mostrar o ir a la lista total de cosas hechas segun categoria. Buscador dentro de la 
+lista (buscar:pull-ups. muestra:todas las lineas donde aparece "pull-ups")
+
+Si en la API de pokemon hay alguno comiendo, lo agregamos. Podemos poner a Machop. Para el sueno snorlax. Tiempo de 
+estudio alguno inteligente. Comidas alguno que coma mucho.

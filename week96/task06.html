@@ -11,40 +11,29 @@
 </head>
 
 <body>
-    <nav>
-        <ul id="menu">
-            <li><a id="toggleMenu">&equiv;</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Lesson 2</a></li>
-            <li><a href="#">Lesson 3</a></li>
-            <li><a href="#">Lesson 4</a></li>
-            <li><a href="#" class="active">Lesson 5</a></li>
-        </ul>
-    </nav>
     <header>
-        <h1>Controlling Your Code</h1>
+        <h1>Daily Activities Tracker</h1>
     </header>
     <main>
         <section>
             <h2>
-                Today is <span id="message2"></span>.
+                <span id="day"></span>
             </h2>
-            <h3>
-                <span id="message1"></span>
-            </h3>
         </section>
         <hr>
         <section>
-            <h2>Temples in Utah</h2>
-            <p>
-                Sort by: 
-                <select id="sortBy">
-                    <option value="templeNameAscending">Temple Name Ascending</option>
-                    <option value="templeNameDescending">Temple Name Descending</option>
+            <h2>What did you do today?</h2>
+                <select id="activity">
+                    <option value="Workout">Workout</option>
+                    <option value="Sleep">Sleep</option>
+                    <option value="Food">Food</option>
+                    <option value="Study">Study time</option>
                 </select>
-            </p>
-            <div id="temples">
+            <div id="input">
+                <input type="text">
+                <button id="btn" type="submit">Submit</button>
             </div>
+
         </section>
     </main>
     <footer>
