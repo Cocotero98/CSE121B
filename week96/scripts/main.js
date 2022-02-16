@@ -17,7 +17,7 @@ let store= function(){
     console.log(newInfo.value)
     input.focus()
   }
-const stopIt=0
+
 }
 let showMe= function(){
   let ammount= localStorage.length;
@@ -37,6 +37,42 @@ show.addEventListener('click', showMe)
 
 // button.addEventListener('click', console.log('works'))
 // toggle menu to open a list in html (Workout, Sleep, Food, Study). Similar to the temple ascending/descending
+
+const snorlax='https://pokeapi.co/api/v2/pokemon/snorlax'
+const jigglypuff='https://pokeapi.co/api/v2/pokemon/jigglypuff'
+const mewtwo='https://pokeapi.co/api/v2/pokemon/mewtwo'
+const machoke='https://pokeapi.co/api/v2/pokemon/machoke'
+
+
+let url=''
+switch(activity.value){
+  case 'Workout':
+    url=machoke;
+    break;
+  case 'Sleep':
+    url=jigglypuff;
+    break;
+    case 'Food':
+    url=snorlax;
+    break;
+  case 'Study':
+    url=mewtwo;
+    break;
+}
+function addImg(data){
+  const pokemonImg=document.getElementById('img')
+  results=data
+  dreamWorld=results.dream_world
+  // console.log("first: ", results.sprites.front_default);
+  let img= document.createElement('img')
+  img.setAttribute('src',results.sprites.front_default)
+  img.setAttribute('alt',results.name)
+  pokemonImg.appendChild(img)
+}
+
+fetch(url)
+.then((response)=>{return response.json()})
+.then(addImg)
 
 //add a space to insert the date (key), add a space to insert what you did (value)
 
