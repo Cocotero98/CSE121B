@@ -1,3 +1,5 @@
+/**WEEK 6 PROJECT - AGUSTIN AGUILAR - CSE121B */
+
 // Defining variables and getting elements
 //Date
 const date= new Date()
@@ -98,7 +100,7 @@ let url=''
   .then(addImg)
 
 
-  
+
 
 //EventListeners
 button.addEventListener('click',store)
