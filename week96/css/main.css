@@ -34,9 +34,6 @@ main {
     text-align: center;
 }
 
-/* Class Selectors */
-
-
-/* ID Selectors */
-
-
+ul li{
+    list-style: none;
+}
